@@ -2,6 +2,7 @@ import React from 'react'
 import { Text, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const LogoWrapper = styled.span`
   font-weight: bold;
@@ -17,7 +18,24 @@ const LogoWrapper = styled.span`
 `
 
 const Logo = () => {
-  return <LogoWrapper></LogoWrapper>
+  const footprintImage = `images/footprint${useColorModeValue('', '-dark')}.png`
+  return (
+    <Link href={'/'}>
+      <a>
+        <LogoWrapper>
+          <Image src={footprintImage} width={20} height={20} alt="Logo" />
+          <Text
+            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+            fontFamily="M Plus Rounded 1c, sans-serif"
+            fontWeight={'bold'}
+            ml={3}
+          >
+            Ahmed Maher
+          </Text>
+        </LogoWrapper>
+      </a>
+    </Link>
+  )
 }
 
 export default Logo

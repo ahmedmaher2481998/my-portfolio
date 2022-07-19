@@ -4,7 +4,11 @@
 /node_modules
 /.pnp
 .pnp.js
+
+
+# others 
 /old
+/.next
 # testing
 /coverage
 
