@@ -8,7 +8,7 @@ const LogoWrapper = styled.span`
   font-weight: bold;
   font-size: 18px;
   display: inline-flex;
-  align-content: center;
+  align-items: center;
   height: 30px;
   line-height: 20px;
   padding: 10px;
@@ -26,7 +26,7 @@ const Logo = () => {
           <Image src={footprintImage} width={20} height={20} alt="Logo" />
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily="M Plus Rounded 1c, sans-serif"
+            fontFamily="M PLUS Rounded 1c, sans-serif"
             fontWeight={'bold'}
             ml={3}
           >
