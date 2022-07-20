@@ -5,7 +5,7 @@ const Page = () => {
   return (
     <Container>
       <Box borderRadius="lg" bg="pink" p={5} mb={6} align="center">
-        Hello,I&apos;m FrontEnd Developer based in Egypt
+        Hello,I&apos;m a Frontend Developer based in Egypt
       </Box>
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
