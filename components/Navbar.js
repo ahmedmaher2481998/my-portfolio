@@ -36,6 +36,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   )
 }
 const Navbar = props => {
+  const { path } = props
   return (
     <Box
       position={'fixed'}
@@ -46,7 +47,41 @@ const Navbar = props => {
       zIndex={1}
       {...props}
     >
-      Navbar
+      <Container
+        display={'flex'}
+        p={2}
+        maxW={'container.md'}
+        wrap="wrap"
+        align="center"
+        justify="space-between"
+      >
+        <Flex align={'center'} mr={5}>
+          <Heading as="h1" size={'lg'} letterSpacing="tighter">
+            <Logo />
+          </Heading>
+        </Flex>
+        <Stack
+          direction={{ base: 'column', md: 'row' }}
+          display={{ base: 'none', md: 'flex' }}
+          width={{ base: 'full', md: 'auto' }}
+          alignItems="center"
+          flexGrow={1}
+          mt={{ base: 4, md: 0 }}
+        >
+          <LinkItem href={'/works'} path={path}>
+            Works
+          </LinkItem>
+          <LinkItem href={'/resume'} path={path}>
+            C.V
+          </LinkItem>
+          <LinkItem href={'/edu'} path={path}>
+            Education
+          </LinkItem>
+          <LinkItem href={'/about'} path={path}>
+            About
+          </LinkItem>
+        </Stack>
+      </Container>
     </Box>
   )
 }

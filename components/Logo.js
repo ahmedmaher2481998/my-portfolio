@@ -18,7 +18,10 @@ const LogoWrapper = styled.span`
 `
 
 const Logo = () => {
-  const footprintImage = `images/footprint${useColorModeValue('', '-dark')}.png`
+  const footprintImage = `/images/footprint${useColorModeValue(
+    '',
+    '-dark'
+  )}.png`
   return (
     <Link href={'/'}>
       <a>
