@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Box, Heading } from '@chakra-ui/react'
+import { Container, Box, Heading, Image, useColorModeValue } from '@chakra-ui/react'
 
 const Page = () => {
   return (
@@ -13,6 +13,18 @@ const Page = () => {
             Ahmed Maher
           </Heading>
           <p>Passionate Software Developer (React / Next.js /Node.js)</p>
+        </Box>
+        <Box flexShrink={1} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} align="center">
+          <Image
+            borderColor={useColorModeValue('whiteAlpha.600', 'whiteAlpha.800')}
+            borderWidth={2}
+            borderStyle="solid"
+            maxWidth="200px"
+            display={'inline-block'}
+            borderRadius="full"
+            src="/images/avatar.jpeg"
+            alt="Personal image"
+          />
         </Box>
       </Box>
     </Container>

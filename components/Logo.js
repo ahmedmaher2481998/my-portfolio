@@ -18,10 +18,7 @@ const LogoWrapper = styled.span`
 `
 
 const Logo = () => {
-  const footprintImage = `/images/footprint${useColorModeValue(
-    '',
-    '-dark'
-  )}.png`
+  const footprintImage = `/images/footprint${useColorModeValue('', '-dark')}.png`
   return (
     <Link href={'/'}>
       <a>
@@ -29,7 +26,7 @@ const Logo = () => {
           <Image src={footprintImage} width={20} height={20} alt="Logo" />
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily="'M PLUS Rounded 1c', sans-serif"
+            fontFamily="'Kanit', sans-serif"
             fontWeight={'bold'}
             ml={3}
           >

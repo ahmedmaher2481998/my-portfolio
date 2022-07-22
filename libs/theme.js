@@ -29,7 +29,7 @@ const components = {
   }
 }
 const fonts = {
-  headings: "'M PLUS Rounded 1c'"
+  headings: ` 'Kanit', sans-serif`
 }
 const colors = {
   grassTeal: '#88ccca'
