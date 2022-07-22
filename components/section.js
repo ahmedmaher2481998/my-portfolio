@@ -11,7 +11,7 @@ const SectionAnimated = ({ children, delay = 0 }) => {
     <StyledDiv
       initial={{ y: 10, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.9, delay }}
+      transition={{ duration: 2, delay, type: 'linear' }}
       mb={6}
     >
       {children}
