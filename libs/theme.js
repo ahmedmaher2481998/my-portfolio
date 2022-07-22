@@ -11,6 +11,7 @@ const components = {
   Heading: {
     variants: {
       'section-title': {
+        color: 'green',
         textDecoration: 'underline',
         fontSize: 20,
         textUnderLineOffset: 6,
@@ -29,7 +30,7 @@ const components = {
   }
 }
 const fonts = {
-  headings: "'M PLUS Rounded 1c'"
+  headings: ` 'Kanit', sans-serif`
 }
 const colors = {
   grassTeal: '#88ccca'
