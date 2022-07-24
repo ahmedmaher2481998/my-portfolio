@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import {
   Container,
   Box,
@@ -22,15 +23,21 @@ import { BioSection, BioYear } from '../components/bio'
 const Page = () => {
   return (
     <Container>
-      <Box
-        borderRadius="lg"
-        bg={useColorModeValue('whiteAlpha.800', 'whiteAlpha.200')}
-        p={5}
-        mb={6}
-        align="center"
+      <motion.div
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8 }}
       >
-        Hello,I&apos;m a Frontend Developer based in Egypt
-      </Box>
+        <Box
+          borderRadius="lg"
+          bg={useColorModeValue('whiteAlpha.800', 'whiteAlpha.200')}
+          p={5}
+          mb={6}
+          align="center"
+        >
+          Hello,I&apos;m a Frontend Developer based in Egypt
+        </Box>
+      </motion.div>
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as={'h2'} variant="page-title">
@@ -129,36 +136,22 @@ const Page = () => {
       {/* Enf of Bio Section */}
       {/* Hobbies Section */}
       <SectionAnimated delay={0.5}>
-        I 🤍:<Paragraph>Movies</Paragraph>
-        <Paragraph
-          _hover={{
-            background: 'white',
-            color: 'teal.500'
-          }}
+        I 🤍: &nbsp; &nbsp;Movies, &nbsp; Books , &nbsp;Sci-Fi ,&nbsp;
+        <a
+          href="https://soundcloud.com/a_maher_938"
+          target={'_blank'}
+          rel="noreferrer"
         >
-          <a
-            href="https://soundcloud.com/a_maher_938"
-            target={'_blank'}
-            rel="noreferrer"
-          >
-            Music
-          </a>
-        </Paragraph>
-        <Paragraph>Video games</Paragraph>
-        <Paragraph
-          _hover={{
-            background: 'white',
-            color: 'teal.500'
-          }}
+          Music ,&nbsp;
+        </a>
+        Video games ,&nbsp;
+        <a
+          href="https://www.reddit.com/user/ahmedmaher2481998"
+          target={'_blank'}
+          rel="noreferrer"
         >
-          <a
-            href="https://www.reddit.com/user/ahmedmaher2481998"
-            target={'_blank'}
-            rel="noreferrer"
-          >
-            reddit
-          </a>
-        </Paragraph>
+          Reddit
+        </a>
       </SectionAnimated>
     </Container>
   )
