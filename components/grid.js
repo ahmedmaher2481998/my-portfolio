@@ -25,26 +25,28 @@ export const GridItem = ({ children, href, title, src }) => {
   )
 }
 export const WorkGridItem = ({ children, id, title, src }) => {
-  ;<Box w="100%" textAlign={'center'}>
-    <NextLink href={`/works/${id}`} passHref scroll={false}>
-      <LinkBox cursor={'pointer'}>
-        <Image
-          src={src}
-          alt={title}
-          className="grid-item-thumbnail"
-          placeholder="blur"
-        />
-        <LinkOverlay ref={`/works/${id}`}>
-          <Text fontSize={20} mt={2}>
-            {title}
-          </Text>
-          <Text mt={2} fontSize={14}>
-            {children}
-          </Text>
-        </LinkOverlay>
-      </LinkBox>
-    </NextLink>
-  </Box>
+  return (
+    <Box w="100%" textAlign={'center'}>
+      <NextLink href={`/works/${id}`} passHref scroll={false}>
+        <LinkBox cursor={'pointer'}>
+          <Image
+            src={src}
+            alt={title}
+            className="grid-item-thumbnail"
+            placeholder="blur"
+          />
+          <LinkOverlay ref={`/works/${id}`}>
+            <Text fontSize={20} mt={2}>
+              {title}
+            </Text>
+            <Text mt={2} fontSize={14}>
+              {children}
+            </Text>
+          </LinkOverlay>
+        </LinkBox>
+      </NextLink>
+    </Box>
+  )
 }
 export const GridItemStyle = () => {
   ;<Global
