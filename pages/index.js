@@ -14,12 +14,7 @@ import SectionAnimated from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 //main component
-/* TODO 
-1-fixing the underline from the section-title variant 
-2- make the delay form the sequence while showing the Bio/work/hobbies sections in the home page 
-3-fix the font for the title 
 
-*/
 const Page = () => {
   return (
     <Container>
