@@ -79,9 +79,14 @@ const Navbar = props => {
           <LinkItem href={'/about'} path={path}>
             About
           </LinkItem>
-          <LinkItem href={'https://github.com/ahmedmaher2481998/my-portfolio'} path={path}>
+
+          <a
+            href={'https://github.com/ahmedmaher2481998/my-portfolio'}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             View Source
-          </LinkItem>
+          </a>
         </Stack>
         <Box flex={1} align="right">
           <ThemeToggleButtons />

@@ -1,14 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Body from '../components/layout/body'
-import {
-  Container,
-  Box,
-  Heading,
-  Image,
-  Button,
-  useColorModeValue
-} from '@chakra-ui/react'
+import { Container, Box, Heading, Image, Button, useColorModeValue } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import NextLink from 'next/link'
 import SectionAnimated from '../components/section'
@@ -17,6 +10,7 @@ import { BioSection, BioYear } from '../components/bio'
 //main component
 
 const Page = () => {
+  const heart = useColorModeValue('black', 'white')
   return (
     <Body title={'Home'}>
       <Container>
@@ -43,17 +37,9 @@ const Page = () => {
             </Heading>
             <p>Passionate Software Developer (React / Next.js /Node.js)</p>
           </Box>
-          <Box
-            flexShrink={1}
-            mt={{ base: 4, md: 0 }}
-            ml={{ md: 6 }}
-            align="center"
-          >
+          <Box flexShrink={1} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} align="center">
             <Image
-              borderColor={useColorModeValue(
-                'whiteAlpha.600',
-                'whiteAlpha.800'
-              )}
+              borderColor={useColorModeValue('whiteAlpha.600', 'whiteAlpha.800')}
               borderWidth={2}
               borderStyle="solid"
               maxWidth="200px"
@@ -71,13 +57,12 @@ const Page = () => {
             Work
           </Heading>
           <Paragraph>
-            Having graduated in bachelor degree Civil engineering, my passion
-            for technology & creative problem-solving led me to Harvard&apos;s
-            CS50 and The Odin Project. Albeit a challenging turn, I gained
-            experience in JavaScript&apos;s diverse ecosystem and developed a
-            passion for Frontend development. Self-motivated, with a passion for
-            learning and experienced in React,Next,js ,Redux ,tailwindCss ,
-            styled Components , typeScript , MUI.
+            Having graduated in bachelor degree Civil engineering, my passion for technology &
+            creative problem-solving led me to Harvard&apos;s CS50 and The Odin Project. Albeit a
+            challenging turn, I gained experience in JavaScript&apos;s diverse ecosystem and
+            developed a passion for Frontend development. Self-motivated, with a passion for
+            learning and experienced in React,Next,js ,Redux ,tailwindCss , styled Components ,
+            typeScript , MUI.
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works" passHref scroll={false}>
@@ -109,23 +94,20 @@ const Page = () => {
           <BioSection>
             <BioYear>2021</BioYear>
             {/* <BioYear>June 2021</BioYear> */}
-            Started Learning to code & fundamentals of programming/CS, started
-            Cs50.
+            Started Learning to code & fundamentals of programming/CS, started Cs50.
           </BioSection>
 
           <BioSection>
             <BioYear>2021</BioYear>
             {/* <BioYear>September 2021</BioYear> */}
-            Starting learning web development using the odin project & other
-            resources.
+            Starting learning web development using the odin project & other resources.
           </BioSection>
 
           <BioSection>
             {/* <BioYear>April 2022</BioYear> */}
             <BioYear>2022</BioYear>
             {/* <BioYear>April 2022</BioYear> */}
-            Started ITI Leaps program (Mentoring fullStack program using JS) as
-            mentee.
+            Started ITI Leaps program (Mentoring fullStack program using JS) as mentee.
           </BioSection>
 
           <BioSection>
@@ -137,12 +119,9 @@ const Page = () => {
         {/* Enf of Bio Section */}
         {/* Hobbies Section */}
         <SectionAnimated delay={0.5}>
-          I 🤍: &nbsp; &nbsp;Movies, &nbsp; Books , &nbsp;Sci-Fi ,&nbsp;
-          <a
-            href="https://soundcloud.com/a_maher_938"
-            target={'_blank'}
-            rel="noreferrer"
-          >
+          I {heart === 'black' ? '🖤 ' : '🤍'}: &nbsp; &nbsp;Movies, &nbsp; Books , &nbsp;Sci-Fi
+          ,&nbsp;
+          <a href="https://soundcloud.com/a_maher_938" target={'_blank'} rel="noreferrer">
             Music ,&nbsp;
           </a>
           Video games ,&nbsp;
