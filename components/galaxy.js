@@ -54,10 +54,38 @@ const Galaxy = () => {
       controls.autoRotate = true
       controls.target = target
       setControls(controls)
-    } else {
-      controls.update()
+
+      loadGLTFMode(scene, './dog.glb', { receivedShadow: false, castShadow: false }).then(() => {
+        animate()
+        setLoading(false)
+      })
+      let req = null
+      let frame = 0
+      const animate = () => {
+        req = requestAnimationFrame(animate)
+        // make sure frame = 0-100
+        frame = frame <= 100 ? frame + 1 : frame
+        if (frame <= 100) {
+          const oldPosition = initialCameraPosition
+          const rotationSpeed = -easeOutCirc(frame / 120) * Math.PI * 20
+
+          camera.position.y = 10
+
+          camera.position.x =
+            oldPosition.x * Math.cos(rotationSpeed) + oldPosition.z * Math.sin(rotationSpeed)
+
+          camera.position.z =
+            oldPosition.z * Math.cos(rotationSpeed) - oldPosition.x * Math.sin(rotationSpeed)
+
+          camera.lookAt(target)
+        } else {
+          controls.update()
+        }
+        //rendering the camera and scene configured above
+        renderer.render(scene, camera)
+      }
     }
-    renderer.renderer(scene, camera)
+
     //eslint-disable-next-line
   }, [])
   return (

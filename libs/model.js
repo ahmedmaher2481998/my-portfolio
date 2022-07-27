@@ -2,7 +2,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 export const loadGLTFMode = (
   scene,
   glbPath,
-  options = { receivedShadow: True, castShadow: true }
+  options = { receivedShadow: true, castShadow: true }
 ) => {
   const { castShadow, receiveShadow } = options
   return new Promise((resolve, reject) => {
