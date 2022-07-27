@@ -13,12 +13,13 @@ const LogoWrapper = styled.span`
   line-height: 20px;
   padding: 10px;
   &:hover img {
-    transform: rotate(20deg);
+    transform: rotate(360deg);
+    transition: 0.3s;
   }
 `
 
 const Logo = () => {
-  const footprintImage = `/images/footprint${useColorModeValue('', '-dark')}.png`
+  const footprintImage = `/pc${useColorModeValue('-dark', '')}.png`
   return (
     <Link href={'/'}>
       <a>

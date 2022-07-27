@@ -27,8 +27,6 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
           p={2}
           bg={active ? 'grassTeal' : undefined}
           color={active ? '#202023' : inactiveColor}
-          // target={target}
-          // {...props}
         >
           {children}
         </Link>
@@ -81,10 +79,7 @@ const Navbar = props => {
           <LinkItem href={'/about'} path={path}>
             About
           </LinkItem>
-          <LinkItem
-            href={'https://github.com/ahmedmaher2481998/my-portfolio'}
-            path={path}
-          >
+          <LinkItem href={'https://github.com/ahmedmaher2481998/my-portfolio'} path={path}>
             View Source
           </LinkItem>
         </Stack>
@@ -114,10 +109,7 @@ const Navbar = props => {
                 <NextLink href={'/about'} passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/ahmedmaher2481998/my-portfolio"
-                >
+                <MenuItem as={Link} href="https://github.com/ahmedmaher2481998/my-portfolio">
                   View Source
                 </MenuItem>
               </MenuList>
