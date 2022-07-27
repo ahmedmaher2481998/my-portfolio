@@ -37,7 +37,27 @@ const Galaxy = () => {
       renderer.outputEncoding = Three.sRGBEncoding
       container.appendChild(renderer.domElement)
       setRenderer(renderer)
+      // w = 640px h = 240
+      // scale ratio 8 / 6
+      const scale = ssH * 0.005 + 4.8
+      const camera = new Three.OrthographicCamera(-scale, scale, scale, -scale, 0.01, 50000)
+      camera.position.copy(initialCameraPosition)
+      camera.lookAt(target)
+      setCamera(camera)
+
+      //illuminates all objects in the scene equally
+      const ambientLight = new Three.AmbientLight(0xcccccc, 1)
+      scene.add(ambientLight)
+
+      const controls = new OrbitControls(camera, renderer.domElement)
+      //keeps rotating
+      controls.autoRotate = true
+      controls.target = target
+    } else {
+      controls.update()
     }
+    renderer.renderer(scene, camera)
+    //eslint-disable-next-line
   }, [])
   return (
     <Box ref={containerRef} className="Galaxy-3d">
