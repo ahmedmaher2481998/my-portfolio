@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { Box, Spinner } from '@chakra-ui/react'
 import { ModelContainer, ModelSpinner } from './modelUtils'
 import * as Three from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
@@ -13,6 +12,7 @@ function easeOutCirc(x) {
 }
 
 const Galaxy = () => {
+  const modelPath = './pc.glb'
   const containerRef = useRef()
   const [_camera, setCamera] = useState()
   const [target] = useState(new Three.Vector3(-0.5, 1.2, 0))
@@ -33,10 +33,10 @@ const Galaxy = () => {
       renderer.setSize(scW, scH)
     }
   }, [renderer])
-
+  const [start, setStart] = useState(false)
   useEffect(() => {
     const { current: container } = containerRef
-    if (container && !renderer) {
+    if (container && !renderer && start) {
       const scW = container.clientWidth
       const scH = container.clientHeight
       const renderer = new Three.WebGLRenderer({
@@ -66,7 +66,7 @@ const Galaxy = () => {
       controls.target = target
       setControls(controls)
 
-      loadGLTFMode(scene, './dog.glb', {
+      loadGLTFMode(scene, modelPath, {
         receivedShadow: false,
         castShadow: false
       }).then(() => {
@@ -103,9 +103,9 @@ const Galaxy = () => {
         renderer.dispose()
       }
     }
-
+    setStart(true)
     //eslint-disable-next-line
-  }, [])
+  }, [start])
 
   useEffect(() => {
     window.addEventListener('resize', handleWindowSizeChange, false)

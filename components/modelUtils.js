@@ -18,7 +18,7 @@ export const ModelContainer = forwardRef(({ children }, ref) => {
   return (
     <Box
       ref={ref}
-      className="3d-model-container"
+      className="modelContainer"
       m="auto"
       mt={['-20px', '-60px', '-120px']}
       mb={['-40px', '-140px', '-200px']}
