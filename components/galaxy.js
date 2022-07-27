@@ -23,6 +23,17 @@ const Galaxy = () => {
   const [renderer, setRenderer] = useState()
   const [scene] = useState(new Three.Scene())
   const [_controls, setControls] = useState()
+
+  const handleWindowSizeChange = useCallback(() => {
+    const { current: container } = containerRef
+    if (container && renderer) {
+      const scW = container.clientWidth
+      const scH = container.clientHeight
+
+      renderer.setSize(scW, scH)
+    }
+  }, [renderer])
+
   useEffect(() => {
     const { current: container } = containerRef
     if (container && !renderer) {
@@ -55,7 +66,7 @@ const Galaxy = () => {
       controls.target = target
       setControls(controls)
 
-      loadGLTFMode(scene, '/need-some-space/source/model.ply', {
+      loadGLTFMode(scene, './dog.glb', {
         receivedShadow: false,
         castShadow: false
       }).then(() => {
@@ -95,13 +106,15 @@ const Galaxy = () => {
 
     //eslint-disable-next-line
   }, [])
-  return (
-    <Box ref={containerRef} className="Galaxy-3d">
-      <ModelContainer>
-        <ModelSpinner />
-      </ModelContainer>
-    </Box>
-  )
+
+  useEffect(() => {
+    window.addEventListener('resize', handleWindowSizeChange, false)
+    return () => {
+      window.removeEventListener('resize', handleWindowSizeChange, false)
+    }
+  }, [renderer, handleWindowSizeChange])
+
+  return <ModelContainer ref={containerRef}>{loading && <ModelSpinner />}</ModelContainer>
 }
 
 export default Galaxy
