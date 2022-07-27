@@ -39,7 +39,7 @@ const Galaxy = () => {
       setRenderer(renderer)
       // w = 640px h = 240
       // scale ratio 8 / 6
-      const scale = ssH * 0.005 + 4.8
+      const scale = scH * 0.005 + 4.8
       const camera = new Three.OrthographicCamera(-scale, scale, scale, -scale, 0.01, 50000)
       camera.position.copy(initialCameraPosition)
       camera.lookAt(target)
@@ -55,7 +55,10 @@ const Galaxy = () => {
       controls.target = target
       setControls(controls)
 
-      loadGLTFMode(scene, './dog.glb', { receivedShadow: false, castShadow: false }).then(() => {
+      loadGLTFMode(scene, '/need-some-space/source/model.ply', {
+        receivedShadow: false,
+        castShadow: false
+      }).then(() => {
         animate()
         setLoading(false)
       })
@@ -83,6 +86,10 @@ const Galaxy = () => {
         }
         //rendering the camera and scene configured above
         renderer.render(scene, camera)
+      }
+      return () => {
+        cancelAnimationFrame(req)
+        renderer.dispose()
       }
     }
 
