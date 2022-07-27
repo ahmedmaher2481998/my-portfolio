@@ -53,6 +53,7 @@ const Galaxy = () => {
       //keeps rotating
       controls.autoRotate = true
       controls.target = target
+      setControls(controls)
     } else {
       controls.update()
     }
