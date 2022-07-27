@@ -1,4 +1,4 @@
-import { GLTFLoader } from 'three/examples/jsm/loaders'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 export const loadGLTFMode = (
   scene,
   glbPath,
