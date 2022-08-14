@@ -14,7 +14,7 @@ const LogoWrapper = styled.span`
   padding: 10px;
   &:hover img {
     transform: rotate(360deg);
-    transition: 0.3s;
+    transition: 1s ease-in-out;
   }
 `
 

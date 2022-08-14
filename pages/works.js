@@ -2,11 +2,9 @@ import SectionAnimated from '../components/section'
 import Body from '../components/layout/body'
 import { WorkGridItem } from '../components/grid'
 import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
-import homepage from '../public/images/e-commerce/home-page.png'
+import comfySloth from '../public/images/e-commerce/home-page.png'
 import battleShip from '../public/images/battleship-images/welcome-xl.png'
-import { createRef } from 'react'
-import { forwardRef } from 'react'
-
+import forkify from '../public/images/forkify/recpie.png'
 const Works = () => {
   return (
     <>
@@ -16,20 +14,26 @@ const Works = () => {
             Works
           </Heading>
 
-          <SimpleGrid column={[1, 1, 2]} gap={6}>
-            {/* <p>this is works </p> */}
-            {/* Works goes in here */}
-            <SectionAnimated delay={0.2}>
-              <WorkGridItem
-                title="this is an image from the project i worked on  "
-                id={'123'}
-                src={homepage}
-              >
-                A Furniture E-commerce with connected with stripe and has advanced filter{' '}
+          <SimpleGrid columns={[1, 1, 2]} gap={6}>
+            <SectionAnimated delay={0.3}>
+              <WorkGridItem title="BattleShip" id={'react-battleShip'} src={battleShip}>
+                A fully responsive BattleShip game made in react / redux and other tools.
               </WorkGridItem>
-              <p>test</p>
             </SectionAnimated>
-            <Divider my={6} />
+
+            <SectionAnimated delay={0.1}>
+              <WorkGridItem title="ComfySloth" id={'comfy-sloth'} src={comfySloth}>
+                ComfySloth is an E-commerce Website for selling furniture,powered by
+                React/context-Api / Stripe.
+              </WorkGridItem>
+            </SectionAnimated>
+
+            <SectionAnimated delay={0.4}>
+              <Divider my={4} />
+              <WorkGridItem title="Forkify" id={'forkify'} src={forkify}>
+                A Recipe search engine, powered by vanilla javascript / sass ,it uses the MVC model
+              </WorkGridItem>
+            </SectionAnimated>
           </SimpleGrid>
         </Container>
       </Body>

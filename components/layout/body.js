@@ -10,13 +10,6 @@ const variantsAnimation = {
 const Body = ({ children, title }) => {
   return (
     <>
-      {title && (
-        <Head>
-          <title>{title} | Ahmed maher</title>
-          <meta name="twitter:title" content={title} />
-          <meta property="og:title" content={title} />
-        </Head>
-      )}
       <motion.article
         initial="hidden"
         animate="enter"
@@ -28,8 +21,17 @@ const Body = ({ children, title }) => {
         }}
         style={{ position: 'relative' }}
       >
-        {children}
-        <GridItemStyle />
+        <>
+          {title && (
+            <Head>
+              <title>{title} | Ahmed maher</title>
+              <meta name="twitter:title" content={title} />
+              <meta property="og:title" content={title} />
+            </Head>
+          )}
+          {children}
+          <GridItemStyle />
+        </>
       </motion.article>
     </>
   )
