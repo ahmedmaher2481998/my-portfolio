@@ -1,6 +1,6 @@
 import React from 'react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Container, Badge, Link, List, ListItem, AspectRatio, SimpleGrid } from '@chakra-ui/react'
+import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
 import { Meta, Title, WorkImage } from '../../components/work'
 import Body from '../../components/layout/body'
 import Paragraph from '../../components/paragraph'
@@ -45,23 +45,14 @@ const BattleShip = () => {
           </List>
 
           <WorkImage src={'/images/battleship-images/welcoem-md.png'} alt={'Welcome page'} />
-          {/*  */}
-
+          <WorkImage src={'/images/battleship-images/welcome-xl.png'} alt={'Welcome page in xl '} />
+          <WorkImage src={'/images/battleship-images/rules-md.png'} alt={'rules page '} />
           <WorkImage src={'/images/battleship-images/place-xl.png'} alt={'placing page image '} />
-
           <WorkImage src={'/images/battleship-images/place-md.png'} alt={'placing page image '} />
-
           <WorkImage src={'/images/battleship-images/battle1.png'} alt={'Battle page image'} />
-
           <WorkImage src={'/images/battleship-images/battle-1.png'} alt={'Battle page image'} />
-
-          <WorkImage src={'/images/battleship-images/winner.png'} alt={''} />
-
-          <WorkImage src={'/images/battleship-images/results-board.png'} alt={''} />
-
-          <WorkImage src={'/images/battleship-images/welcome-xl.png'} alt={''} />
-
-          <WorkImage src={'/images/battleship-images/rules-md.png'} alt={''} />
+          <WorkImage src={'/images/battleship-images/winner.png'} alt={'Winner page'} />
+          <WorkImage src={'/images/battleship-images/results-board.png'} alt={'Result board'} />
         </Container>
       </Body>
     </>
