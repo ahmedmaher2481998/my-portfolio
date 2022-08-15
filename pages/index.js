@@ -18,7 +18,13 @@ import SectionAnimated from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import SocialLink from '../components/socialLink'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import {
+  IoLogoTwitter,
+  IoLogoInstagram,
+  IoLogoGithub,
+  IoLogoLinkedin,
+  IoLogoReddit
+} from 'react-icons/io5'
 import { SiGmail } from 'react-icons/si'
 //main component
 
@@ -132,18 +138,21 @@ const Page = () => {
         {/* Enf of Bio Section */}
         {/* Hobbies Section */}
         <SectionAnimated delay={0.3}>
-          I {heart === 'black' ? '🖤 ' : '🤍'}: &nbsp; &nbsp;Movies, &nbsp; Books , &nbsp;Sci-Fi
-          ,&nbsp;
+          I {heart === 'black' ? '🖤 ' : '🤍'}: &nbsp; &nbsp;Movies 🎥, &nbsp; Books 📚 ,
+          &nbsp;Sci-Fi ⚛ ,&nbsp;
           <a href="https://soundcloud.com/a_maher_938" target={'_blank'} rel="noreferrer">
-            Music ,&nbsp;
+            Music 🎵 ,&nbsp;
           </a>
-          Video games ,&nbsp;
+          Video games 🎮 ,
           <a
             href="https://www.reddit.com/user/ahmedmaher2481998"
             target={'_blank'}
             rel="noreferrer"
           >
-            Reddit
+            <span>
+              <IoLogoReddit />
+              Reddit
+            </span>
           </a>
         </SectionAnimated>
         {/* Social media links & accounts  */}
