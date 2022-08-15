@@ -85,7 +85,7 @@ const Page = () => {
             </NextLink>
           </Box>
         </SectionAnimated>
-        {/* End of Work Section */}
+
         {/* Bio Section */}
         <SectionAnimated delay={0.2}>
           <Heading as="h3" variant={'section-title'}>
@@ -146,6 +146,7 @@ const Page = () => {
             Reddit
           </a>
         </SectionAnimated>
+        {/* Social media links & accounts  */}
         <SectionAnimated delay={0.3}>
           <Heading as="h3" variant={'section-title'}>
             My accounts
