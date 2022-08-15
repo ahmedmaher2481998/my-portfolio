@@ -30,8 +30,8 @@ const BattleShip = () => {
             </ListItem>
             <ListItem color={'purple.500'}>
               <Meta>Live</Meta>{' '}
-              <Link href="https://battleship-react-amaher938.netlify.app" target={'_blank'}>
-                battleship-react-amaher938.netlify.app
+              <Link href="https://react-battleships.vercel.app" target={'_blank'}>
+                react-battleships.vercel.app
                 <ExternalLinkIcon mx={4} />
               </Link>
             </ListItem>
