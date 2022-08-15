@@ -138,8 +138,10 @@ const Page = () => {
         {/* Enf of Bio Section */}
         {/* Hobbies Section */}
         <SectionAnimated delay={0.3}>
-          I {heart === 'black' ? '🖤 ' : '🤍'}: &nbsp; &nbsp;Movies 🎥, &nbsp; Books 📚 ,
-          &nbsp;Sci-Fi ⚛ ,&nbsp;
+          <Heading as="h3" variant={'section-title'}>
+            I {heart === 'black' ? '🖤 ' : '🤍'}:
+          </Heading>
+          &nbsp; &nbsp;Movies 🎥, &nbsp; Books 📚 , &nbsp;Sci-Fi ⚛ ,&nbsp;
           <a href="https://soundcloud.com/a_maher_938" target={'_blank'} rel="noreferrer">
             Music 🎵 ,&nbsp;
           </a>
@@ -149,10 +151,7 @@ const Page = () => {
             target={'_blank'}
             rel="noreferrer"
           >
-            <span>
-              <IoLogoReddit />
-              Reddit
-            </span>
+            <span>Reddit 🌐</span>
           </a>
         </SectionAnimated>
         {/* Social media links & accounts  */}

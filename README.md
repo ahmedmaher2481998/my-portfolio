@@ -6,8 +6,6 @@ used Font : ` 'Kanit', sans-serif`
 
 <!-- Todo -->
 
-1 - work details for battle ship
-2 - work details for comfy sloth
 3 - work details for forKify
 4 - edu / course page
 5 - link to domain
@@ -25,3 +23,4 @@ used Font : ` 'Kanit', sans-serif`
 4-fix images in the works page
 5-fix the layout of grid in the works page
 6- fix the color scheme for the whole website
+7 - use yor logo instead of pc

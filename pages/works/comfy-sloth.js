@@ -7,10 +7,10 @@ import Paragraph from '../../components/paragraph'
 const ComfySloth = () => {
   return (
     <>
-      <Body title={'BattleShip'}>
+      <Body title={'ComfySloth'}>
         <Container>
           <Title>
-            React BattleShip <Badge>june 2022</Badge>
+            ComfySloth <Badge>May 2022</Badge>
           </Title>
           <Paragraph>
             ComfySloth is an E-commerce Website for selling furniture,powered by React ,and consumes
