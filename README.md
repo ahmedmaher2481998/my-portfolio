@@ -6,14 +6,16 @@ used Font : ` 'Kanit', sans-serif`
 
 <!-- Todo -->
 
-3 - work details for forKify
-4 - edu / course page
-5 - link to domain
-6 - write your c v
-7 - embedded the cv in the portfolio website
-8 - write the md file for the porfirio
-9 - add the porfirio as one of the websites
-10 - fix all bugs
+4 - fix all bugs
+
+- finish the ream on ur git hub
+  5 - link to domain
+  6 - write your c v
+  7 - embedded the cv in the portfolio website
+  8 - write the md file for the porfirio
+  9 - add the porfirio as one of the websites / maybe
+  10 - write a small readme file for the forkify project  
+  11 - send the cv
 
 <!-- bugs to be fixed  -->
 
