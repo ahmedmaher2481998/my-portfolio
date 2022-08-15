@@ -1,12 +1,25 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Body from '../components/layout/body'
-import { Container, Box, Heading, Image, Button, useColorModeValue } from '@chakra-ui/react'
+import {
+  Container,
+  Box,
+  Heading,
+  Image,
+  Button,
+  useColorModeValue,
+  List,
+  Link,
+  ListItem
+} from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import NextLink from 'next/link'
 import SectionAnimated from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
+import SocialLink from '../components/socialLink'
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { SiGmail } from 'react-icons/si'
 //main component
 
 const Page = () => {
@@ -74,7 +87,7 @@ const Page = () => {
         </SectionAnimated>
         {/* End of Work Section */}
         {/* Bio Section */}
-        <SectionAnimated delay={0.3}>
+        <SectionAnimated delay={0.2}>
           <Heading as="h3" variant={'section-title'}>
             Bio
           </Heading>
@@ -118,7 +131,7 @@ const Page = () => {
         </SectionAnimated>
         {/* Enf of Bio Section */}
         {/* Hobbies Section */}
-        <SectionAnimated delay={0.5}>
+        <SectionAnimated delay={0.3}>
           I {heart === 'black' ? '🖤 ' : '🤍'}: &nbsp; &nbsp;Movies, &nbsp; Books , &nbsp;Sci-Fi
           ,&nbsp;
           <a href="https://soundcloud.com/a_maher_938" target={'_blank'} rel="noreferrer">
@@ -132,6 +145,32 @@ const Page = () => {
           >
             Reddit
           </a>
+        </SectionAnimated>
+        <SectionAnimated delay={0.3}>
+          <Heading as="h3" variant={'section-title'}>
+            My accounts
+          </Heading>
+          <List>
+            <SocialLink href={'https://github.com/ahmedmaher2481998'} icon={<IoLogoGithub />}>
+              @ahmedmaher2481998
+            </SocialLink>
+            <SocialLink
+              href={'https://www.linkedin.com/in/ahmedmaher2481998'}
+              icon={<IoLogoLinkedin />}
+            >
+              @ahmedmaher2481998
+            </SocialLink>
+            <SocialLink href={'https://twitter.com/A_maher_938'} icon={<IoLogoTwitter />}>
+              @A_maher_938
+            </SocialLink>
+            <SocialLink href={'https://www.instagram.com/a.maher.938/'} icon={<IoLogoInstagram />}>
+              @a.maher.938
+            </SocialLink>
+
+            <SocialLink href={'mailto:ahmedmaher2481998@gmail.com'} icon={<SiGmail />}>
+              @ahmedmaher2481998
+            </SocialLink>
+          </List>
         </SectionAnimated>
       </Container>
     </Body>

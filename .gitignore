@@ -7,10 +7,9 @@
 
 
 # others 
-/old
+dist
+.vercel
 /.next
-install
-# testing
 /coverage
 
 # production

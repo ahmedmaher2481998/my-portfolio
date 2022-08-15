@@ -3,7 +3,6 @@ import { Text, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 import Image from 'next/image'
 import Link from 'next/link'
-
 const LogoWrapper = styled.span`
   font-weight: bold;
   font-size: 18px;
@@ -19,12 +18,12 @@ const LogoWrapper = styled.span`
 `
 
 const Logo = () => {
-  const footprintImage = `/pc${useColorModeValue('-dark', '')}.png`
+  const pcImage = `/pc${useColorModeValue('-dark', '')}.png`
   return (
     <Link href={'/'}>
       <a>
         <LogoWrapper>
-          <Image src={footprintImage} width={20} height={20} alt="Logo" />
+          <Image src={pcImage} width={20} height={20} alt="Logo" />
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily="'Kanit', sans-serif"
