@@ -3,14 +3,13 @@ import { motion } from 'framer-motion'
 import Body from '../components/layout/body'
 import {
   Container,
+  Badge,
   Box,
   Heading,
   Image,
   Button,
   useColorModeValue,
-  List,
-  Link,
-  ListItem
+  List
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import NextLink from 'next/link'
@@ -18,14 +17,9 @@ import SectionAnimated from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import SocialLink from '../components/socialLink'
-import {
-  IoLogoTwitter,
-  IoLogoInstagram,
-  IoLogoGithub,
-  IoLogoLinkedin,
-  IoLogoReddit
-} from 'react-icons/io5'
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import { SiGmail } from 'react-icons/si'
+import { Meta } from '../components/work'
 //main component
 
 const Page = () => {
@@ -99,39 +93,32 @@ const Page = () => {
           </Heading>
 
           <BioSection>
-            <BioYear>1998</BioYear>
-            {/* <BioYear>August 1998</BioYear> */}
+            <BioYear>1998-8</BioYear>
             Born in Bani-suef Egypt.
           </BioSection>
 
           <BioSection>
-            <BioYear>2016</BioYear>
-            {/* <BioYear>August 2016</BioYear> */}
+            <BioYear>2016-8</BioYear>
             Started studying in BNS university faculty of engineering.
           </BioSection>
 
           <BioSection>
-            <BioYear>2021</BioYear>
-            {/* <BioYear>June 2021</BioYear> */}
+            <BioYear>2021-5</BioYear>
             Started Learning to code & fundamentals of programming/CS, started Cs50.
           </BioSection>
 
           <BioSection>
-            <BioYear>2021</BioYear>
-            {/* <BioYear>September 2021</BioYear> */}
+            <BioYear>2021-9</BioYear>
             Starting learning web development using the odin project & other resources.
           </BioSection>
 
           <BioSection>
-            {/* <BioYear>April 2022</BioYear> */}
-            <BioYear>2022</BioYear>
-            {/* <BioYear>April 2022</BioYear> */}
+            <BioYear>2022-4</BioYear>
             Started ITI Leaps program (Mentoring fullStack program using JS) as mentee.
           </BioSection>
 
           <BioSection>
             <BioYear>2022</BioYear>
-            {/* <BioYear>July 2022</BioYear> */}
             Graduated from BNS faculty of engineering civil department.
           </BioSection>
         </SectionAnimated>

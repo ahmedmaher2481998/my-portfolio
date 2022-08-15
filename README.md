@@ -1,4 +1,15 @@
-# this is my portfolio project
+# Homepage
+
+> this is a portfolio website inspired by (Takuya Matsuyama)
+
+## tools used in this project
+
+- next js
+- framer-motion
+- three js
+- chakra ui
+- react icons
+- react pdf
 
 ## it's done using chakra-ui next.js and framer-motion
 
@@ -8,14 +19,12 @@ used Font : ` 'Kanit', sans-serif`
 
 4 - fix all bugs
 
-- finish the ream on ur git hub
-  5 - link to domain
-  6 - write your c v
-  7 - embedded the cv in the portfolio website
-  8 - write the md file for the porfirio
-  9 - add the porfirio as one of the websites / maybe
-  10 - write a small readme file for the forkify project  
-  11 - send the cv
+<
+
+8 - write the md file for the porfirio
+
+10 - write a small readme file for the forkify project  
+ 11 - send the cv
 
 <!-- bugs to be fixed  -->
 
