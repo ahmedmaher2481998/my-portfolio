@@ -1,6 +1,5 @@
 import React from 'react'
-import cs50 from '../public/cs50.png'
-import avatar from '../public/images/avatar.jpeg'
+
 // import Image from 'next/image'
 
 import { Image, Box, Flex, chakra, Link, useColorModeValue, Text } from '@chakra-ui/react'
@@ -10,7 +9,15 @@ const About = () => {
     <>
       <Flex borderRadius={20} bg={bg} p={50} w="full" alignItems="center" justifyContent="center">
         <Box mx="auto" rounded="lg" shadow="md" bg={bg} maxW="2xl">
-          <Image roundedTop="lg" w="full" h={64} fit="cover" src={cs50.src} alt="Article" />
+          <Image
+            placeholder="blur"
+            roundedTop="lg"
+            w="full"
+            h={64}
+            fit="cover"
+            src={'/cs50.png'}
+            alt="Article"
+          />
 
           <Box p={6}>
             <Box>
