@@ -4,6 +4,19 @@
 
 used Font : ` 'Kanit', sans-serif`
 
+<!-- Todo -->
+
+1 - work details for battle ship
+2 - work details for comfy sloth
+3 - work details for forKify
+4 - edu / course page
+5 - link to domain
+6 - write your c v
+7 - embedded the cv in the portfolio website
+8 - write the md file for the porfirio
+9 - add the porfirio as one of the websites
+10 - fix all bugs
+
 <!-- bugs to be fixed  -->
 
 1-fixing the underline from the section-title variant
