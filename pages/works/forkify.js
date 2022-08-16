@@ -33,8 +33,8 @@ const Forkify = () => {
             </ListItem>
             <ListItem color={'purple.500'}>
               <Meta>Repo</Meta>{' '}
-              <Link href="https://github.com/ahmedmaher2481998/jsProject" target={'_blank'}>
-                github.com/ahmedmaher2481998/jsProject
+              <Link href="https://github.com/ahmedmaher2481998/Forkify" target={'_blank'}>
+                github.com/ahmedmaher2481998/Forkify
                 <ExternalLinkIcon mx={4} />
               </Link>
             </ListItem>
