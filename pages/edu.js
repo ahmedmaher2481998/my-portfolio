@@ -8,14 +8,7 @@ import { GiBookshelf } from 'react-icons/gi'
 const Edu = () => {
   return (
     <Flex w="auto" justifyContent="center" alignItems="center">
-      <Box
-        py={12}
-        bg="white"
-        _dark={{
-          bg: 'gray.800'
-        }}
-        rounded="xl"
-      >
+      <Box py={12} rounded="xl">
         <Box
           maxW="7xl"
           mx="auto"
@@ -67,8 +60,8 @@ const Edu = () => {
               }}
             >
               i approach any new technology with curiosity and enthusiasm, i watch any quick video
-              or visual learning material ,then i try to use it in something i like and occasionally
-              visiting the documentation upon seeking more info
+              or visual learning material ,then i try to use it in building something i like and
+              occasionally visiting the documentation upon seeking more info
             </chakra.p>
           </Box>
 
