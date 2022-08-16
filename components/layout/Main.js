@@ -2,8 +2,12 @@ import React from 'react'
 import { Box, Container } from '@chakra-ui/react'
 import Head from 'next/head'
 import Navbar from '../Navbar'
-import Galaxy from '../galaxy'
+import Model3D from '../model'
+import { useRouter } from 'next/router'
+
 const Main = ({ children, router }) => {
+  const { pathname } = useRouter()
+
   return (
     <>
       <Box as="main" pb={8}>
@@ -18,7 +22,9 @@ const Main = ({ children, router }) => {
         <Navbar path={router.asPath} />
 
         <Container maxWidth="container.md" pt={14}>
-          <Galaxy />
+          <Box display={pathname === '/resume' ? 'none' : 'inline-block'}>
+            <Model3D />
+          </Box>
           {children}
         </Container>
       </Box>

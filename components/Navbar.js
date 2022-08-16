@@ -72,7 +72,7 @@ const Navbar = props => {
             Works
           </LinkItem>
           <LinkItem href={'/resume'} path={path}>
-            C.V
+            Resume(c.v)
           </LinkItem>
           <LinkItem href={'/edu'} path={path}>
             Education
@@ -107,7 +107,7 @@ const Navbar = props => {
                   <MenuItem as={Link}>works</MenuItem>
                 </NextLink>
                 <NextLink href={'/resume'} passHref>
-                  <MenuItem as={Link}>C.v</MenuItem>
+                  <MenuItem as={Link}>Resume(c.v)</MenuItem>
                 </NextLink>
                 <NextLink href={'/edu'} passHref>
                   <MenuItem as={Link}>Education</MenuItem>

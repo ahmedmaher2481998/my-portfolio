@@ -11,7 +11,7 @@ function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4))
 }
 
-const Galaxy = () => {
+const Model3D = () => {
   const modelPath = './pc.glb'
   const containerRef = useRef()
   const [_camera, setCamera] = useState()
@@ -117,4 +117,4 @@ const Galaxy = () => {
   return <ModelContainer ref={containerRef}>{loading && <ModelSpinner />}</ModelContainer>
 }
 
-export default Galaxy
+export default Model3D

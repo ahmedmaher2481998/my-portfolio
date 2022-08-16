@@ -1,8 +1,16 @@
-# Homepage
+# My-Porfirio
 
-> this is a portfolio website inspired by (Takuya Matsuyama)
+> this is a portfolio website inspired by (Takuya Matsuyama),it's fully responsive and uses three js for rendering 3d glb model ,it als o
 
-## tools used in this project
+### contents
+
+- Home page
+- works page
+- Resume Page
+- Education page
+- about me page
+
+### tools used in this project
 
 - next js
 - framer-motion
@@ -10,8 +18,6 @@
 - chakra ui
 - react icons
 - react pdf
-
-## it's done using chakra-ui next.js and framer-motion
 
 <!---
 used Font : ` 'Kanit', sans-serif`
