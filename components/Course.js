@@ -1,4 +1,4 @@
-import { Flex, Icon, Box, chakra } from '@chakra-ui/react'
+import { Flex, Icon, Box, chakra, useColorModeValue } from '@chakra-ui/react'
 
 const Course = ({ icon, title, children }) => {
   return (
@@ -19,7 +19,8 @@ const Course = ({ icon, title, children }) => {
             boxSize={6}
             fill="none"
             viewBox="0 0 24 24"
-            stroke="currentColor"
+            color={useColorModeValue('blackAlpha.400', 'whiteAlpha.400')}
+            stroke={useColorModeValue('blackAlpha.400', 'whiteAlpha.400')}
             aria-hidden="true"
           >
             {icon}
