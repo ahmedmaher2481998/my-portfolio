@@ -1,8 +1,13 @@
-import { ChakraProvider, Container } from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react'
 import Layout from '../components/layout/Main'
-import theme from '@chakra-ui/react'
+import theme from '../libs/theme'
 import Fonts from '../components/fonts'
 import Footer from '../components/Footer'
+
+if (typeof window !== 'undefined') {
+  window.history.scrollRestoration = 'manual'
+}
+
 const Website = ({ Component, pageProps, router }) => {
   return (
     <ChakraProvider theme={theme}>

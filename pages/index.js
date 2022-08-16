@@ -1,16 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Body from '../components/layout/body'
-import {
-  Container,
-  Badge,
-  Box,
-  Heading,
-  Image,
-  Button,
-  useColorModeValue,
-  List
-} from '@chakra-ui/react'
+import { Container, Box, Heading, Image, Button, useColorModeValue, List } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import NextLink from 'next/link'
 import SectionAnimated from '../components/section'
@@ -19,7 +10,6 @@ import { BioSection, BioYear } from '../components/bio'
 import SocialLink from '../components/socialLink'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import { SiGmail } from 'react-icons/si'
-import { Meta } from '../components/work'
 //main component
 
 const Page = () => {

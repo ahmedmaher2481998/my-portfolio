@@ -11,14 +11,13 @@ const components = {
   Heading: {
     variants: {
       'section-title': {
-        color: 'green',
         textDecoration: 'underline',
         fontSize: 20,
-        textUnderLineOffset: 6,
+        textUnderlineOffset: 6,
         textDecorationColor: '#525252',
         textDecorationThickness: 4,
-        marginBottom: 4,
-        marginTop: 3
+        marginTop: 3,
+        marginBottom: 4
       }
     }
   },
@@ -30,7 +29,7 @@ const components = {
   }
 }
 const fonts = {
-  headings: ` 'Kanit', sans-serif`
+  heading: "'M PLUS Rounded 1c'"
 }
 const colors = {
   grassTeal: '#88ccca'
@@ -40,10 +39,10 @@ const config = {
   useSystemColorMode: true
 }
 const theme = extendTheme({
+  config,
   styles,
   components,
   fonts,
-  colors,
-  config
+  colors
 })
 export default theme

@@ -2,7 +2,7 @@ import { useState } from 'react'
 // import default react-pdf entry
 import { Document, Page, pdfjs } from 'react-pdf'
 // import pdf worker as a url, see `next.config.js` and `pdf-worker.js`
-import workerSrc from '../libs/pad-worker'
+import workerSrc from '../libs/pdf-worker'
 
 pdfjs.GlobalWorkerOptions.workerSrc = workerSrc
 

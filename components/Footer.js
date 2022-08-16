@@ -17,20 +17,16 @@ const Footer = () => {
         justify="space-between"
         px="6"
         py="4"
-        bg="white"
-        _dark={{
-          bg: 'gray.800'
-        }}
       >
         <NextLink passHref href={'/'}>
           <Link
             _hover={{
               width: '25',
-              borderRadius: 12,
+              borderRadius: 30,
               bg: useColorModeValue('blackAlpha.600', 'whiteAlpha.400')
             }}
             w={20}
-            borderRadius={5}
+            borderRadius={25}
             bg={useColorModeValue('blackAlpha.800', 'transparent')}
           >
             <Image src={logo.src} alt="logo" />
