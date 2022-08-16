@@ -1,0 +1,288 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.4.40",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Earth",
+            "rotation" : [
+                0.1438019871711731,
+                -0.938534677028656,
+                0.08019833266735077,
+                0.30338403582572937
+            ],
+            "scale" : [
+                22.2551212310791,
+                22.255117416381836,
+                22.25511932373047
+            ],
+            "translation" : [
+                3.7819676399230957,
+                -0.8636358976364136,
+                -5.02532958984375
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "clouds",
+            "rotation" : [
+                0.04265443980693817,
+                0.08126430213451385,
+                0.1431204080581665,
+                0.9854406714439392
+            ],
+            "scale" : [
+                22.324113845825195,
+                22.324111938476562,
+                22.324113845825195
+            ],
+            "translation" : [
+                3.7819676399230957,
+                -0.8636358976364136,
+                -5.02532958984375
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "alphaMode" : "BLEND",
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                1,
+                1,
+                1
+            ],
+            "emissiveTexture" : {
+                "index" : 0,
+                "texCoord" : 0
+            },
+            "name" : "Earth_Diffuse_6K",
+            "normalTexture" : {
+                "index" : 1,
+                "scale" : 0.5,
+                "texCoord" : 0
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 2,
+                    "texCoord" : 0
+                },
+                "metallicFactor" : 0,
+                "metallicRoughnessTexture" : {
+                    "index" : 3,
+                    "texCoord" : 0
+                }
+            }
+        },
+        {
+            "alphaMode" : "BLEND",
+            "doubleSided" : true,
+            "name" : "Material.001",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Earth_Diffuse_6K",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Earth_Diffuse_6K.003",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 3,
+                    "material" : 1
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        },
+        {
+            "sampler" : 0,
+            "source" : 3
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "Earth_Illumination_6K",
+            "uri" : "Earth_Illumination_6K.jpg"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "Earth_NormalNRM_6K",
+            "uri" : "Earth_NormalNRM_6K.jpg"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Earth_Diffuse_6K",
+            "uri" : "Earth_Diffuse_6K.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Earth_Diffuse_6K",
+            "uri" : "Earth_Diffuse_6K-1.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 8406,
+            "max" : [
+                0.31830987334251404,
+                0.3183099329471588,
+                0.3183106482028961
+            ],
+            "min" : [
+                -0.31830987334251404,
+                -0.3183099329471588,
+                -0.31830909848213196
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 8406,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 8406,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 48384,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 8406,
+            "max" : [
+                0.31830987334251404,
+                0.3183099329471588,
+                0.3183106482028961
+            ],
+            "min" : [
+                -0.31830987334251404,
+                -0.3183099329471588,
+                -0.31830909848213196
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 8406,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 8406,
+            "type" : "VEC2"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 100872,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 100872,
+            "byteOffset" : 100872
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 67248,
+            "byteOffset" : 201744
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 96768,
+            "byteOffset" : 268992
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 100872,
+            "byteOffset" : 365760
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 100872,
+            "byteOffset" : 466632
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 67248,
+            "byteOffset" : 567504
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9986
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 634752,
+            "uri" : "Earth.bin"
+        }
+    ]
+}

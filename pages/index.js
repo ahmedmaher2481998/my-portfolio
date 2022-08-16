@@ -45,10 +45,10 @@ const Page = () => {
               borderColor={useColorModeValue('whiteAlpha.600', 'whiteAlpha.800')}
               borderWidth={2}
               borderStyle="solid"
-              maxWidth="200px"
+              maxWidth="150px"
               display={'inline-block'}
               borderRadius="full"
-              src="/images/avatar.jpeg"
+              src="/avatar.jpg"
               alt="Personal image"
             />
           </Box>
