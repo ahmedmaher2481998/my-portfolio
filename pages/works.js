@@ -15,6 +15,12 @@ const Works = () => {
           </Heading>
 
           <SimpleGrid columns={[1, 1, 2]} gap={6}>
+            <SectionAnimated delay={0.2}>
+              <WorkGridItem title="Google clone" id={'google-clone'} src="/images/google-clone">
+                A next js SSR Google clone with authentication and pagination .
+              </WorkGridItem>
+            </SectionAnimated>
+
             <SectionAnimated delay={0.3}>
               <WorkGridItem title="BattleShip" id={'react-battleShip'} src={battleShip}>
                 A fully responsive BattleShip game made in react / redux and other tools.
