@@ -1,12 +1,11 @@
 import React from 'react'
-
-// import Image from 'next/image'
+import SectionAnimated from '../components/section'
 
 import { Image, Box, Flex, chakra, Link, useColorModeValue, Text } from '@chakra-ui/react'
 const About = () => {
   const bg = useColorModeValue('gray.300', '#202023')
   return (
-    <>
+    <SectionAnimated delay={0.3}>
       <Flex borderRadius={20} bg={bg} p={50} w="full" alignItems="center" justifyContent="center">
         <Box mx="auto" rounded="lg" shadow="md" bg={bg} maxW="2xl">
           <Image
@@ -106,7 +105,7 @@ const About = () => {
           </Box>
         </Box>
       </Flex>
-    </>
+    </SectionAnimated>
   )
 }
 

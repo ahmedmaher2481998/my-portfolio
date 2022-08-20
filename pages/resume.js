@@ -1,13 +1,14 @@
 import dynamic from 'next/dynamic'
 import { Box, Button, Link } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
+import SectionAnimated from '../components/section'
 const PDFViewer = dynamic(() => import('../components/resumeViewer'), {
   ssr: false
 })
 
 export default function PDF() {
   return (
-    <>
+    <SectionAnimated delay={0.3}>
       <Box align="center">
         <Link
           _hover={{ textDecoration: 'none' }}
@@ -21,6 +22,6 @@ export default function PDF() {
         <PDFViewer />
       </Box>
       {/* the pdf viewer component */}
-    </>
+    </SectionAnimated>
   )
 }
