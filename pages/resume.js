@@ -13,7 +13,7 @@ export default function PDF() {
         <Link
           _hover={{ textDecoration: 'none' }}
           target={'_blank'}
-          href="https://docs.google.com/document/d/e/2PACX-1vSWdn-FBCD4wUpyfZyE-p-2jOxlKIcfXFJNHhFNVMyyQSJPh2URaYf4TpQvQ2ynVv6b1Mn2p4-SQr6I/pub "
+          href="https://docs.google.com/document/d/1J6NQli5376gS-4xW3Bj1_nsJAPVe_1k7/edit?usp=sharing&ouid=105626555580654089249&rtpof=true&sd=true"
         >
           <Button my={4} rightIcon={<ChevronRightIcon />} colorScheme="purple">
             See in Full Screen
