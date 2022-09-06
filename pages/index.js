@@ -38,7 +38,7 @@ const Page = () => {
             <Heading as={'h2'} variant="page-title">
               Ahmed Maher
             </Heading>
-            <p>Passionate Software Developer (React / Next.js /Node.js)</p>
+            <p>React.js/ Next.js /Node.js Developer</p>
           </Box>
           <Box flexShrink={1} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} align="center">
             <Image
@@ -61,12 +61,10 @@ const Page = () => {
             Work
           </Heading>
           <Paragraph>
-            Having graduated in bachelor degree Civil engineering, my passion for technology &
-            creative problem-solving led me to Harvard&apos;s CS50 and The Odin Project. Albeit a
-            challenging turn, I gained experience in JavaScript&apos;s diverse ecosystem and
-            developed a passion for Frontend development. Self-motivated, with a passion for
-            learning and experienced in React,Next,js ,Redux ,tailwindCss , styled Components ,
-            typeScript , MUI.
+            Passionate full stack developer with Frontend as my main focus,i have hands-on
+            experience developing and implementing web applications and solutions using a range of
+            programming languages and technologies mainly the MERN (MongoDB, Express, React, and
+            Node.js) stack.
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works" passHref scroll={false}>
@@ -84,32 +82,32 @@ const Page = () => {
           </Heading>
 
           <BioSection>
-            <BioYear>1998-8</BioYear>
+            <BioYear>Aug-1998</BioYear>
             Born in Bani-suef Egypt.
           </BioSection>
 
           <BioSection>
-            <BioYear>2016-8</BioYear>
-            Started studying in BNS university faculty of engineering.
+            <BioYear>Aug-2016</BioYear>
+            Started in BNS university faculty of Engineering.
           </BioSection>
 
           <BioSection>
-            <BioYear>2021-5</BioYear>
-            Started Learning to code & fundamentals of programming/CS, started Cs50.
+            <BioYear>May-2021</BioYear>
+            Started my coding journey with Cs50
           </BioSection>
 
           <BioSection>
-            <BioYear>2021-9</BioYear>
-            Starting learning web development using the odin project & other resources.
+            <BioYear>Sep-2021</BioYear>
+            Learning web Development(MERN) with The Odin Project
           </BioSection>
 
           <BioSection>
-            <BioYear>2022-4</BioYear>
-            Started ITI Leaps program (Mentoring fullStack program using JS) as mentee.
+            <BioYear>Feb-2022</BioYear>
+            Expanding my knowledge with App Academy Open v2
           </BioSection>
 
           <BioSection>
-            <BioYear>2022</BioYear>
+            <BioYear>May-2022</BioYear>
             Graduated from BNS faculty of engineering civil department.
           </BioSection>
         </SectionAnimated>
