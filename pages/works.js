@@ -6,6 +6,7 @@ import comfySloth from '../public/images/e-commerce/home-page.png'
 import battleShip from '../public/images/battleship-images/welcome-xl.png'
 import forkify from '../public/images/forkify/recpie.png'
 import GoogleClone from '../public/images/google-clone/google-clone.png'
+import Netflix from '../public/images/netflix-v2/browse.png'
 
 const Works = () => {
   return (
@@ -17,6 +18,12 @@ const Works = () => {
           </Heading>
 
           <SimpleGrid columns={[1, 1, 2]} gap={6}>
+            <SectionAnimated delay={0.1}>
+              <WorkGridItem title="Netflix-v2" id={'netflix-v2'} src={Netflix}>
+                netflix clone ,with react compound components pattern and full code coverage
+              </WorkGridItem>
+            </SectionAnimated>
+
             <SectionAnimated delay={0.2}>
               <WorkGridItem title="Google clone" id={'google-clone'} src={GoogleClone}>
                 A next.js App with SSR Google clone with authentication and pagination .
@@ -29,7 +36,8 @@ const Works = () => {
               </WorkGridItem>
             </SectionAnimated>
 
-            {/* <Divider /> */}
+            <Divider />
+            <Divider />
             <SectionAnimated delay={0.1}>
               <WorkGridItem title="ComfySloth" id={'comfy-sloth'} src={comfySloth}>
                 ComfySloth is an E-commerce Website for selling furniture,powered by
