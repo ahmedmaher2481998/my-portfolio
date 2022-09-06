@@ -23,28 +23,22 @@ const Works = () => {
                 netflix clone ,with react compound components pattern and full code coverage
               </WorkGridItem>
             </SectionAnimated>
-
             <SectionAnimated delay={0.2}>
               <WorkGridItem title="Google clone" id={'google-clone'} src={GoogleClone}>
                 A next.js App with SSR Google clone with authentication and pagination .
               </WorkGridItem>
             </SectionAnimated>
-
             <SectionAnimated delay={0.3}>
               <WorkGridItem title="BattleShip" id={'react-battleShip'} src={battleShip}>
                 A fully responsive BattleShip game made in react / redux and other tools.
               </WorkGridItem>
             </SectionAnimated>
-
-            <Divider />
-            <Divider />
             <SectionAnimated delay={0.1}>
               <WorkGridItem title="ComfySloth" id={'comfy-sloth'} src={comfySloth}>
                 ComfySloth is an E-commerce Website for selling furniture,powered by
                 React/context-Api / Stripe.
               </WorkGridItem>
             </SectionAnimated>
-
             <SectionAnimated delay={0.4}>
               <WorkGridItem title="Forkify" id={'forkify'} src={forkify}>
                 A Recipe search engine, powered by vanilla javascript / sass ,it uses the MVC model
