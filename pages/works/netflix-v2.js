@@ -7,7 +7,7 @@ import Paragraph from '../../components/paragraph'
 const BattleShip = () => {
   return (
     <>
-      <Body title={'BattleShip'}>
+      <Body title={'NetflixV2'}>
         <Container>
           <Title>
             Netflix-v2 <Badge>August 2022</Badge>

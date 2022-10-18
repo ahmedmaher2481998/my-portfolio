@@ -30,7 +30,7 @@ const Page = () => {
             mb={6}
             align="center"
           >
-            Hello,I&apos;m a Frontend Developer based in Egypt
+            Hello,I&apos;m a Full stack Developer based in Egypt
           </Box>
         </motion.div>
         <Box display={{ md: 'flex' }}>
@@ -38,7 +38,7 @@ const Page = () => {
             <Heading as={'h2'} variant="page-title">
               Ahmed Maher
             </Heading>
-            <p>React.js/ Next.js /Node.js Developer</p>
+            <p>Full stack developer</p>
           </Box>
           <Box flexShrink={1} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} align="center">
             <Image
@@ -61,10 +61,12 @@ const Page = () => {
             Work
           </Heading>
           <Paragraph>
-            Passionate full stack developer with Frontend as my main focus,i have hands-on
-            experience developing and implementing web applications and solutions using a range of
-            programming languages and technologies mainly the MERN (MongoDB, Express, React, and
-            Node.js) stack.
+            <span>
+              Passionate full stack developer with 6 months of experience and Frontend as my main
+              focus,i have hands-on experience developing and implementing web applications and
+              solutions using a range of programming languages and technologies mainly (MongoDB(odm
+              : mongoose)/SQL(orm : sequelize), Express, React, and Node.js) stack.
+            </span>
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works" passHref scroll={false}>
@@ -81,10 +83,10 @@ const Page = () => {
             Bio
           </Heading>
 
-          <BioSection>
+          {/* <BioSection>
             <BioYear>Aug-1998</BioYear>
             Born in Bani-suef Egypt.
-          </BioSection>
+          </BioSection> */}
 
           <BioSection>
             <BioYear>Aug-2016</BioYear>
@@ -98,7 +100,7 @@ const Page = () => {
 
           <BioSection>
             <BioYear>Sep-2021</BioYear>
-            Learning web Development(MERN) with The Odin Project
+            Learning Fullstack web Development(MERN)
           </BioSection>
 
           <BioSection>
@@ -108,7 +110,12 @@ const Page = () => {
 
           <BioSection>
             <BioYear>May-2022</BioYear>
-            Graduated from BNS faculty of engineering civil department.
+            Graduated from BNS as a civil engineer.
+          </BioSection>
+
+          <BioSection>
+            <BioYear>Aug-2022</BioYear>
+            Started Working for Idoko Spftware as a junior frontend
           </BioSection>
         </SectionAnimated>
         {/* Enf of Bio Section */}

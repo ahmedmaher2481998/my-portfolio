@@ -47,12 +47,12 @@ const Edu = () => {
                   color: 'gray.900'
                 }}
               >
-                these are the resources i used to learn by side building stuff on my own .
+                These recourses helped me be a self-taught full stack developer.
               </chakra.p>
               <chakra.p
                 mt={4}
                 maxW="2xl"
-                fontSize="xl"
+                fontSize="x"
                 mx={{
                   lg: 'auto'
                 }}
@@ -86,6 +86,12 @@ const Edu = () => {
                   md: 10
                 }}
               >
+                <Course title="App Academy Full stack course " icon={<IoIosAppstore />}>
+                  i started to learning React & along side learned tailwindCss and typescript on my
+                  own, i also learned about the redux pattern and how to use global state manger
+                  like redux or X-state or else ...
+                </Course>
+
                 <Course
                   title="Harvard's Cs50"
                   icon={
@@ -116,12 +122,6 @@ const Edu = () => {
                 <Course title="React jhon smilga" icon={<SiUdemy />}>
                   in this course i learned a lot more and read a lot of blogPosts & articles to
                   farther understand react and the how things work under the hood .
-                </Course>
-
-                <Course title="App Academy Full stack course " icon={<IoIosAppstore />}>
-                  i started to learning React & along side learned tailwindCss and typescript on my
-                  own, i also learned about the redux pattern and how to use global state manger
-                  like redux or X-state or else ...
                 </Course>
 
                 <Course title="Next js learn platform" icon={<GiBookshelf />}>

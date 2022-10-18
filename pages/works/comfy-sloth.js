@@ -29,6 +29,7 @@ const ComfySloth = () => {
                 comfy-sloth-maher.netlify.app/
                 <ExternalLinkIcon mx={4} />
               </Link>
+              (refresh if didn&apos;t open)
             </ListItem>
             <ListItem color={'purple.500'}>
               <Meta>Repo</Meta>{' '}
