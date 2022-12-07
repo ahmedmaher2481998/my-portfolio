@@ -1,20 +1,20 @@
-import SectionAnimated from '../components/section'
-import Body from '../components/layout/body'
-import { WorkGridItem } from '../components/grid'
+import SectionAnimated from '../../components/section'
+import Body from '../../components/layout/body'
+import { WorkGridItem } from '../../components/grid'
 import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
-import comfySloth from '../public/images/e-commerce/home-page.png'
-import battleShip from '../public/images/battleship-images/welcome-xl.png'
-import forkify from '../public/images/forkify/recpie.png'
-import GoogleClone from '../public/images/google-clone/google-clone.png'
-import Netflix from '../public/images/netflix-v2/browse.png'
+import comfySloth from '../../public/images/e-commerce/home-page.png'
+import battleShip from '../../public/images/battleship-images/welcome-xl.png'
+import forkify from '../../public/images/forkify/recpie.png'
+import GoogleClone from '../../public/images/google-clone/google-clone.png'
+import Netflix from '../../public/images/netflix-v2/browse.png'
 
-const Works = () => {
+const Projects = () => {
   return (
     <>
-      <Body title="Works">
+      <Body title="Projects">
         <Container>
           <Heading as={'h3'} fontSize={20} mb={4}>
-            Works
+            Projects
           </Heading>
 
           <SimpleGrid columns={[1, 1, 2]} gap={6}>
@@ -51,4 +51,4 @@ const Works = () => {
   )
 }
 
-export default Works
+export default Projects

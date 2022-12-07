@@ -1,7 +1,7 @@
 # [My-Porfirio](https://www.ahmed-maher.live)
 
 > this is a portfolio website inspired by (Takuya Matsuyama).  
-> every project in the works page has a detailed page from it cocains the repo & live links for the project .
+> every project in the Project page has a detailed page from it cocains the repo & live links for the project .
 > it's fully responsive and uses three js for rendering 3d glb model .  
 > it has dark /light mode with some smooth animations while transitioning between pages .  
 > it also views the resume pdf in the resume page with out embedding it from outer recourse .
@@ -16,7 +16,7 @@
 ### contents
 
 - Home page
-- works page
+- projects page
 - Resume Page
 - Education page
 - about me page
