@@ -62,7 +62,7 @@ const Page = () => {
           </Heading>
           <Paragraph>
             <span>
-              Passionate full stack developer with 6 months of experience and Frontend as my main
+              Passionate full stack developer with 1 year of experience and Frontend as my main
               focus,i have hands-on experience developing and implementing web applications and
               solutions using a range of programming languages and technologies mainly (MongoDB(odm
               : mongoose)/SQL(orm : sequelize), Express, React, and Node.js) stack.
@@ -82,11 +82,6 @@ const Page = () => {
           <Heading as="h3" variant={'section-title'}>
             Bio
           </Heading>
-
-          {/* <BioSection>
-            <BioYear>Aug-1998</BioYear>
-            Born in Bani-suef Egypt.
-          </BioSection> */}
 
           <BioSection>
             <BioYear>Aug-2016</BioYear>
@@ -115,7 +110,7 @@ const Page = () => {
 
           <BioSection>
             <BioYear>Aug-2022</BioYear>
-            Started Working for Idoko Spftware as a junior frontend
+            got contract for Idoko Spftware to work on e-commerce website as frontend.
           </BioSection>
         </SectionAnimated>
         {/* Enf of Bio Section */}
@@ -124,18 +119,8 @@ const Page = () => {
           <Heading as="h3" variant={'section-title'}>
             I {heart === 'black' ? '🖤 ' : '🤍'}:
           </Heading>
-          &nbsp; &nbsp;Movies 🎥, &nbsp; Books 📚 , &nbsp;Sci-Fi ⚛ ,&nbsp;
-          <a href="https://soundcloud.com/a_maher_938" target={'_blank'} rel="noreferrer">
-            Music 🎵 ,&nbsp;
-          </a>
-          Video games 🎮 ,
-          <a
-            href="https://www.reddit.com/user/ahmedmaher2481998"
-            target={'_blank'}
-            rel="noreferrer"
-          >
-            <span>Reddit 🌐</span>
-          </a>
+          &nbsp; &nbsp;Movies 🎥, &nbsp; Books 📚 , &nbsp;Sci-Fi ⚛ ,&nbsp; Music 🎵 ,&nbsp; Video
+          games 🎮 , Reddit
         </SectionAnimated>
         {/* Social media links & accounts  */}
         <SectionAnimated delay={0.3}>
@@ -151,12 +136,6 @@ const Page = () => {
               icon={<IoLogoLinkedin />}
             >
               @ahmedmaher2481998
-            </SocialLink>
-            <SocialLink href={'https://twitter.com/A_maher_938'} icon={<IoLogoTwitter />}>
-              @A_maher_938
-            </SocialLink>
-            <SocialLink href={'https://www.instagram.com/a.maher.938/'} icon={<IoLogoInstagram />}>
-              @a.maher.938
             </SocialLink>
 
             <SocialLink href={'mailto:ahmedmaher2481998@gmail.com'} icon={<SiGmail />}>

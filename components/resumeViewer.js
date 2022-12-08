@@ -7,7 +7,7 @@ import workerSrc from '../libs/pdf-worker'
 pdfjs.GlobalWorkerOptions.workerSrc = workerSrc
 
 export default function ResumeViewer() {
-  const [file, setFile] = useState('./Ahmed-Maher.pdf')
+  const [file, setFile] = useState('./Ahmed-maher.pdf')
   const [numPages, setNumPages] = useState(null)
 
   function onDocumentLoadSuccess({ numPages: nextNumPages }) {
